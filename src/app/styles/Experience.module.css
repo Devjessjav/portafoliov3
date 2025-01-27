@@ -1,0 +1,21 @@
+.container_section {
+    background: rgba(000, 000, 000, 0.4);
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.border_img_list {
+    border-radius: 25%;
+    border: 1px solid #f1c833
+}
+
+.title_experience {
+    color: #fafafa;
+    font-size: 17pt;
+}
+
+.subtitle_experience {
+    color: #74727f;
+    font-weight: 600;
+}

@@ -1,0 +1,35 @@
+.container_section {
+    background: rgba(000, 000, 000, 0.4);
+    height: auto;
+    border-radius: 12px;
+}
+
+.subtitle_text {
+    color: #74727f;
+    font-weight: 600;
+}
+
+.title_skills {
+    color: #fafafa;
+    font-size: 14pt;
+}
+
+.container_skills {
+    background: #2f303b;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+.text_skill {
+    color: #fafafa;
+}
+
+.text_skill:hover {
+    color: #f1c833;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    cursor: pointer;
+}
+
+

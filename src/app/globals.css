@@ -17,5 +17,61 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  background-image: url("./_images/background/bg3v.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.title_sections {
+  color: #f1c833;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  font-size: 27pt;
+}
+
+.m_tp_6 {
+  margin-top: 2%;
+}
+
+.holographic-card {
+  background: #111;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  text-align: center;
+  width: 160px;
+  padding: 20px;
+}
+
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, rgba(0, 255, 255, 0.3));
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.holographic-card:hover p {
+  color: #f1c833;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  cursor: pointer;
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }

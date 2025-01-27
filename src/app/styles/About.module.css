@@ -1,0 +1,41 @@
+.container_section {
+    background: rgba(000, 000, 000, 0.4);
+    height: 500px;
+    border-radius: 12px;
+}
+.avatar_style {
+    border-radius: 50%;
+    width: 310px;
+    height: 100%;
+}
+
+.container_styles{
+    margin-top: 12%;
+    width: 100%;
+}
+
+.padding_forms{
+    padding-left: 20%;
+}
+
+.container_nombre {
+    color: white;
+    position: absolute;
+    top: 83%;
+    background: rgba(000, 000, 000, 0.9);
+    padding: 20px;
+    font-size: 17pt;
+    border-radius: 12px;
+    border: 1px solid #f1c833;
+}
+
+.text_labels {
+    color: #74727f;
+    font-size: 17pt;
+    font-weight: 700;
+}
+
+.data_text{
+    color: #fafafa;
+    font-size: 17pt;
+}
