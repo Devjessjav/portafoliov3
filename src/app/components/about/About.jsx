@@ -4,7 +4,7 @@ import Image from 'next/image'
 // Styles
 import styles from '../../styles/About.module.css'
 // Images
-import Avatar from '../../../../public/_images/Avatar/avatar2.png'
+import Avatar from '../../../../public/_images/avatar/avatar2.png'
 
 export default function About() {
     return (
