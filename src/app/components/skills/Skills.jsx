@@ -4,19 +4,19 @@ import Image from 'next/image';
 // Foonts
 import { Poppins } from "next/font/google";
 // Icons
-import Html from '../../_images/icons/htmlsvg.svg'
-import Js from '../../_images/icons/jssvg.svg'
-import Angular from '../../_images/icons/angularsvg.svg'
-import Vue from '../../_images/icons/vuesvg.svg'
-import Reactjs from '../../_images/icons/reactsvg.svg'
-import Redux from '../../_images/icons/reduxsvg.svg'
-import Nextjs from '../../_images/icons/nextjs2.svg'
-import Css from '../../_images/icons/csssvg.svg'
-import Bootstrapsvg from '../../_images/icons/bootstrapsvg.svg'
-import Tailwindsvg from '../../_images/icons/tailwindsvg.svg'
-import Trellosvg from '../../_images/icons/trellosvg.svg'
-import Figmasvg from '../../_images/icons/figmasvg.svg'
-import Github from '../../_images/icons/githubsvg.svg'
+import Html from '../../../../public/_images/icons/htmlsvg.svg'
+import Js from '../../../../public/_images/icons/jssvg.svg'
+import Angular from '../../../../public/_images/icons/angularsvg.svg'
+import Vue from '../../../../public/_images/icons/vuesvg.svg'
+import Reactjs from '../../../../public/_images/icons/reactsvg.svg'
+import Redux from '../../../../public/_images/icons/reduxsvg.svg'
+import Nextjs from '../../../../public/_images/icons/nextjs2.svg'
+import Css from '../../../../public/_images/icons/csssvg.svg'
+import Bootstrapsvg from '../../../../public/_images/icons/bootstrapsvg.svg'
+import Tailwindsvg from '../../../../public/_images/icons/tailwindsvg.svg'
+import Trellosvg from '../../../../public/_images/icons/trellosvg.svg'
+import Figmasvg from '../../../../public/_images/icons/figmasvg.svg'
+import Github from '../../../../public/_images/icons/githubsvg.svg'
 // styles
 import styles from '../../styles/Skills.module.css'
 

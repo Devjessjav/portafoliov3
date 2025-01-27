@@ -6,7 +6,7 @@ import styles from '../../styles/Experience.module.css'
 // Foonts
 import { Poppins } from "next/font/google";
 // icons
-import Dev from '../../_images/icons/dev2.gif'
+import Dev from '../../../../public/_images/icons/dev2.gif'
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] });
 

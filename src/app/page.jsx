@@ -1,13 +1,11 @@
 'use client'
 import { useState, useEffect } from 'react';
 
-import Image from "next/image";
 // Components
-import Navbar from '../app/components/navbar/Navbar'
-import About from '../app/components/about/About'
-import Skills from '../app/components/skills/Skills'
-import Experience from '../app/components/experience/Experience'
-import Proyects from '../app/components/proyectos/Proyects'
+import About from './components/about/About'
+import Skills from './components/skills/Skills'
+import Experience from './components/experience/Experience'
+import Proyects from './components/proyectos/Proyects'
 // Styles
 import styles from './styles/Navbar.module.css'
 
@@ -25,7 +23,7 @@ export default function Home() {
     };
   }, []);
 
-  const handleScrollskills = (e: { preventDefault: () => void; }) => {
+  const handleScrollskills = (e) => {
     e.preventDefault(); // Evita la recarga de la página
     setClassAct('2')
     const element = document.getElementById('skills');
@@ -34,7 +32,7 @@ export default function Home() {
     }
   }
 
-  const handleScrollabout = (e: { preventDefault: () => void; }) => {
+  const handleScrollabout = (e) => {
     e.preventDefault(); // Evita la recarga de la página
     setClassAct('1')
     const element = document.getElementById('about');
@@ -43,7 +41,7 @@ export default function Home() {
     }
   }
 
-  const handleScrollexperience = (e: { preventDefault: () => void; }) => {
+  const handleScrollexperience = (e) => {
     e.preventDefault(); // Evita la recarga de la página
     setClassAct('3')
     const element = document.getElementById('experience');
@@ -52,7 +50,7 @@ export default function Home() {
     }
   }
 
-  const handleScrollproyects = (e: { preventDefault: () => void; }) => {
+  const handleScrollproyects = (e) => {
     e.preventDefault(); // Evita la recarga de la página
     setClassAct('4')
     const element = document.getElementById('proyects');

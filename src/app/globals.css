@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  background-image: url("./_images/background/bg3v.jpg");
+  background-image: url("../../public/_images/background/bg3v.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
@@ -174,7 +174,6 @@ body {
 
   transform: translateX(-50%);
 
-  background-image: url("../app/_images/proyects/seven1.png");
 }
 
 .container .card .slide.slide2 .content p {
