@@ -52,12 +52,12 @@ export default function Experience() {
                 <ul className="m_tp_6">
                     {
                         experienceList.map((item, index) => (
-                            <li class="pb-3 sm:pb-4 mb-4" key={index}>
-                                <div class="flex items-center space-x-4 rtl:space-x-reverse">
-                                    <div class="shrink-0">
+                            <li className="pb-3 sm:pb-4 mb-4" key={index}>
+                                <div className="flex items-center space-x-4 rtl:space-x-reverse">
+                                    <div className="shrink-0">
                                         <Image className={styles.border_img_list} src={Dev} alt="Neil image" />
                                     </div>
-                                    <div class="flex-1 min-w-0">
+                                    <div className="flex-1 ">
                                         <p className={styles.title_experience}>
                                             {item.title}
                                         </p>
@@ -68,7 +68,7 @@ export default function Experience() {
                                             - {item.description}
                                         </p>
                                     </div>
-                                    <div className={`inline-flex items-center ${styles.title_experience}`}>
+                                    <div className={`flexi items-center ${styles.title_experience}`}>
                                         {item.fecha}
                                     </div>
                                 </div>

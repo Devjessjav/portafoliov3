@@ -1,6 +1,6 @@
 .container_section {
     background: rgba(000, 000, 000, 0.4);
-    height: 500px;
+    height: auto;
     border-radius: 12px;
 }
 .avatar_style {
@@ -9,12 +9,12 @@
     height: 100%;
 }
 
-.container_styles{
+.container_styles {
     margin-top: 12%;
     width: 100%;
 }
 
-.padding_forms{
+.padding_forms {
     padding-left: 20%;
 }
 
@@ -35,7 +35,31 @@
     font-weight: 700;
 }
 
-.data_text{
+.data_text {
     color: #fafafa;
     font-size: 17pt;
+}
+
+@media (min-width: 320px) {
+    .padding_forms {
+        padding-left: 0;
+    }
+    .data_text {
+        font-size: 13pt;
+    }
+    .text_labels {
+        font-size: 15pt;
+    }
+}
+
+@media (min-width: 480px) {
+    .padding_forms {
+        padding-left: 0;
+    }
+    .data_text {
+        font-size: 13pt;
+    }
+    .text_labels {
+        font-size: 15pt;
+    }
 }

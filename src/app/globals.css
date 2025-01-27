@@ -22,7 +22,9 @@ body {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.active_link {
+  border-bottom: 3px solid #f1c833;
+}
 .title_sections {
   color: #f1c833;
   text-decoration: underline;
@@ -74,4 +76,228 @@ body {
 .holographic-card:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
+}
+
+.container .card .icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .card .icon .fa {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 80px;
+
+  color: #fff;
+}
+
+.container .card .slide {
+  width: 360px;
+  height: 221px;
+
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: 0.7s;
+
+  transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px 0px 20px 0px;
+
+  box-sizing: border-box;
+
+  transition: 0.8s;
+
+  transform: translateY(-122px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 2px solid #f1c833;
+}
+
+.container .card:hover .slide.slide2 {
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+  position: absolute;
+
+  width: 30px;
+
+  height: 4px;
+
+  bottom: 15px;
+
+  left: 50%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-image: url("../app/_images/proyects/seven1.png");
+}
+
+.container .card .slide.slide2 .content p {
+  margin: 0;
+
+  padding: 0;
+
+  text-align: center;
+  margin-top: 8px !important;
+}
+
+.container .card .slide.slide2 .content h3 {
+  margin: 0 0 10px 0;
+
+  padding: 0;
+
+  font-size: 24px;
+
+  text-align: center;
+}
+
+.proyects_size {
+  width: 50px;
+  height: 50px;
+}
+
+.modal_bg {
+  background: rgba(000, 000, 000, 0.8);
+}
+
+.index_sup {
+  z-index: 3;
+}
+
+.closed_icon_modal {
+  position: absolute;
+  color: yellow;
+  top: 5%;
+  left: 90%;
+}
+
+.icon_size {
+  width: 60px;
+  height: 60px;
+}
+
+.flexi {
+  display: inline-flex;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Ajusta el color de fondo según tu diseño */
+  z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+@media (max-width: 768px) {
+  .flexi {
+    display: none;
+  }
+  .size_img_skills {
+    width: 40px;
+    height: 40px;
+  }
+  .holographic-card {
+    background: #111;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 90px;
+    padding: 3px;
+  }
+  .m_tp_6 {
+    margin-top: 7%;
+  }
+  .title_sections {
+    font-size: 20pt;
+  }
+
+  .container .card .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+    transition: 0.8s;
+    transform: translateY(-33px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 2px solid #f1c833;
+    height: 100%;
+  }
+  .container .card .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.7s;
+    transform: none;
+    top: 22%;
+  }
+  .container .card .slide {
+    width: 100%;
+    height: 217px;
+    transition: 0.5s;
+  }
+  .closed_icon_modal {
+    position: absolute;
+    color: yellow;
+    top: 14;
+    left: 83%;
+  }
+  .icon_size {
+    width: 50px;
+    height: 40px;
+  }
+  .p_responsive {
+    padding: 20px;
+  }
 }

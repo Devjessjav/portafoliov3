@@ -92,32 +92,33 @@ export default function Skills() {
 
 
                 <div className="grid grid-cols-12 gap-4 m_tp_6">
+                        {
+                            skills.map((item, index) => (
+                                <div className="col-span-4 md:col-span-2 mb-3 justify-center gap-4 " key={index}>
+                                    <div className="flex flex-col items-center">
 
-                    {
-                        skills.map((item, index) => (
-                            <div className="col-span-2 mb-3 justify-center gap-4" key={index}>
-                                <div className="flex flex-col items-center">
+                                        <div className="holographic-container">
+                                            <div className="holographic-card">
+                                                <div className="relative flex justify-center">
 
-                                    <div class="holographic-container">
-                                        <div class="holographic-card">
-                                            <div className="relative flex justify-center">
+                                                    <Image className="relative size_img_skills" src={item.src} alt={item.text} />
 
-                                                <Image className="relative" src={item.src} alt={item.text} />
+                                                </div>
 
+
+                                                <p className={`font-bold ${styles.text_skill}`}>
+                                                    {item.text}
+                                                </p>
                                             </div>
-
-
-                                            <p className={`font-bold ${styles.text_skill}`}>
-                                                {item.text}
-                                            </p>
                                         </div>
+
+
                                     </div>
-
-
                                 </div>
-                            </div>
-                        ))
-                    }
+                            ))
+                        }
+
+                    
                 </div>
 
 
